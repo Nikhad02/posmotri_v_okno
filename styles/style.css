@@ -36,3 +36,26 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  margin: 130px 30px;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-column-gap: 30px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.content__video-card {
+  display: flex;
+}
+
+.title {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: uppercase;
+}
