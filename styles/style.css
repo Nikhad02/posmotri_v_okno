@@ -145,6 +145,11 @@ ol {
 
 .content__card-link {
   text-decoration: none;
+  display: block;
+}
+
+.content__card-link_current {
+  background: #545050;
 }
 
 .search-form__fieldset-title {
