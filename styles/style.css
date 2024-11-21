@@ -57,6 +57,7 @@ ol {
   line-height: 70px;
   text-transform: uppercase;
   margin-bottom: 26px;
+  font-family: Oswald, sans-serif;
 }
 
 .content__accent {
@@ -220,6 +221,7 @@ label .search-form__pseudo-checkbox {
   border: 1px solid #000;
   outline-offset: 1px;
   outline: 1px solid #FFFFFF;
+  margin-right: 4px;
 }
 
 .search-form__label {
