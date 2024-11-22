@@ -40,6 +40,14 @@ ol {
   list-style: none;
 }
 
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -71,7 +79,7 @@ ol {
 }
 
 .content__list {
-  overflow: scroll;
+  overflow: auto;
   max-height: 298px;
   position: relative;
 }
@@ -224,15 +232,17 @@ label .search-form__pseudo-checkbox {
 
 .search-form__label {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.search-form__label:focus-visible {
+.search-form__label:has(input[type='checkbox']:focus-visible){
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
 .search-form__label:not(:last-child) {
-  margin-right: 9px;
+  margin-right: 21px;
 }
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox {
@@ -271,21 +281,26 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
   align-self: end;
 }
 
-.search-form__submit-button:hover {
+.button:hover {
   text-decoration: underline;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
-.content__list-item:focus-visible {
+.content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: -1px;
 }
 
 .search-form__checkbox-list {
   margin-top: 5px;
+  display: flex;
+}
+
+.search-form__label-text {
+  display: block;
 }
 
