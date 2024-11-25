@@ -204,18 +204,9 @@ input:not([type="text"]){
   border-left: #fff 1px solid;
 }
 
-button:focus {
-  outline: none;
-}
-
 .search-form__textfield:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
-}
-
-.search-form__label:hover {
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 label .search-form__pseudo-checkbox {
@@ -234,6 +225,10 @@ label .search-form__pseudo-checkbox {
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.search-form__label:has(input[type="checkbox"]:hover){
+  text-decoration: underline;
 }
 
 .search-form__label:has(input[type='checkbox']:focus-visible){
@@ -273,7 +268,8 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 }
 
 .more-button {
-  padding: 6px 144.5px;
+  width: 399px;
+  height: 34px;
 }
 
 .search-form__submit-button {
@@ -303,4 +299,3 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 .search-form__label-text {
   display: block;
 }
-
